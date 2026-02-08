@@ -33,7 +33,7 @@ jobs:
 
       - name: 安装依赖并构建
         run: | # 第二步：安装依赖并执行构建命令，生成 dist/ 或 build/ 目录
-          npm ci
+          npm install
           npm run build # 确保你的 package.json 中有 "build" 脚本
 
       - name: 设置 Pages
